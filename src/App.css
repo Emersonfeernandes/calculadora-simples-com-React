@@ -1,0 +1,74 @@
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.space{
+  width: 10%;
+}
+.calculator {
+  background: #f0eeee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 60%;
+  width: 32%;
+  text-align: center;
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+.input {
+  font-size: 27px;
+  min-height: 40px;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 23px;
+  background: #161718;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #455b72;
+}
+
+.buttons button:nth-child(10),
+.buttons button:nth-last-child(2) {
+  background: #dc3545;
+}
+
+.buttons button:nth-last-child(2):hover,
+.buttons button:nth-child(10):hover {
+  background: #a71d2a;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
